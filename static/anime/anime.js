@@ -210,11 +210,12 @@
     var img = doc.getElementById('avatarImg');
     if (img) {
       var fallback = img.getAttribute('src');
-      img.setAttribute('src', asset('anime/avatar.svg'));
+      var avatarSrc = (CFG.site && CFG.site.avatar) || 'anime/avatar-kurisu.png';
+      img.setAttribute('src', asset(avatarSrc));
       img.setAttribute('alt', (CFG.site && CFG.site.name) || 'avatar');
       var onErr = function () {
         img.removeEventListener('error', onErr);
-        if (fallback) img.setAttribute('src', fallback);
+        img.setAttribute('src', asset('anime/avatar.png'));
       };
       img.addEventListener('error', onErr);
       if ((!CFG.effects || CFG.effects.avatarRing !== false) && !img.parentNode.classList.contains('anime-avatar')) {
@@ -233,7 +234,7 @@
 
     var apple = doc.createElement('link');
     apple.setAttribute('rel', 'apple-touch-icon');
-    apple.setAttribute('href', asset('anime/avatar.svg'));
+    apple.setAttribute('href', asset(((CFG.site && CFG.site.avatar) || 'anime/avatar-kurisu.png')));
     doc.head.appendChild(apple);
 
     // 给纯图标按钮补上无障碍标签（Gmeek 已带 title）
@@ -310,7 +311,13 @@
     if (CFG.hero.showMascot !== false) {
       var art = el('div', 'anime-hero-art');
       var mascotImg = doc.createElement('img');
-      mascotImg.src = asset((CFG.mascot && CFG.mascot.image) || 'anime/mascot.svg');
+      var heroFallback = false;
+      mascotImg.src = asset((CFG.mascot && CFG.mascot.image) || 'anime/mascot.png');
+      mascotImg.addEventListener('error', function () {
+        if (heroFallback) return;
+        heroFallback = true;
+        mascotImg.src = asset('anime/mascot.svg');
+      });
       mascotImg.alt = (CFG.mascot && CFG.mascot.name) || '\u770B\u677F\u5A18';
       mascotImg.loading = 'lazy';
       art.appendChild(mascotImg);

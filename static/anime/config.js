@@ -97,7 +97,7 @@ window.ANIME_CONFIG = {
   mascot: {
     enabled: true,
     name: "LazyBigKing",
-    image: "anime/mascot.svg",
+    image: "anime/mascot.png",
     greetings: [
       "欢迎回来！今天也要元气满满哦～",
       "诶嘿，被你发现啦。要不要抽一句话带走？",

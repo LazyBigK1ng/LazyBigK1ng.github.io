@@ -1,0 +1,135 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMax slice">
+  <defs>
+    <linearGradient id="nightSky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#05060f"/>
+      <stop offset=".45" stop-color="#0b1330"/>
+      <stop offset=".78" stop-color="#1b2350"/>
+      <stop offset="1" stop-color="#333a6b"/>
+    </linearGradient>
+    <radialGradient id="moonGlow" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#eaf2ff" stop-opacity=".85"/>
+      <stop offset=".35" stop-color="#b9c9ff" stop-opacity=".28"/>
+      <stop offset="1" stop-color="#7c8cff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="moonCore" cx=".38" cy=".34" r=".7">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset=".6" stop-color="#e6edff"/>
+      <stop offset="1" stop-color="#c3cdf2"/>
+    </radialGradient>
+    <linearGradient id="milky" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#8fb4ff" stop-opacity="0"/>
+      <stop offset=".5" stop-color="#b7a6ff" stop-opacity=".28"/>
+      <stop offset="1" stop-color="#7de6ff" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="cityFar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1a2350"/>
+      <stop offset="1" stop-color="#0a0f24"/>
+    </linearGradient>
+    <linearGradient id="cityNear" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0c1128"/>
+      <stop offset="1" stop-color="#05070f"/>
+    </linearGradient>
+    <radialGradient id="vignette" cx=".5" cy=".45" r=".8">
+      <stop offset=".5" stop-color="#000" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000" stop-opacity=".5"/>
+    </radialGradient>
+    <g id="star">
+      <circle r="1.5" fill="#fff"/>
+    </g>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#nightSky)"/>
+
+  <!-- milky way band -->
+  <g opacity=".9">
+    <rect x="-200" y="40" width="2000" height="260" fill="url(#milky)" transform="rotate(-18 800 170)"/>
+    <rect x="-200" y="90" width="2000" height="90" fill="url(#milky)" opacity=".8" transform="rotate(-18 800 170)"/>
+  </g>
+
+  <!-- stars -->
+  <g fill="#ffffff">
+    <g opacity=".95"><circle cx="90" cy="120" r="1.8"/><circle cx="250" cy="70" r="1.3"/><circle cx="410" cy="150" r="1.6"/></g>
+    <g opacity=".75"><circle cx="560" cy="60" r="1"/><circle cx="700" cy="130" r="1.4"/><circle cx="860" cy="80" r="1.1"/></g>
+    <g opacity=".9"><circle cx="1010" cy="150" r="1.7"/><circle cx="1180" cy="60" r="1.2"/><circle cx="1330" cy="120" r="1.5"/></g>
+    <g opacity=".7"><circle cx="1470" cy="70" r="1.1"/><circle cx="1540" cy="180" r="1.3"/><circle cx="180" cy="250" r="1"/></g>
+    <g opacity=".6"><circle cx="320" cy="320" r="1.2"/><circle cx="520" cy="260" r=".9"/><circle cx="760" cy="300" r="1.1"/></g>
+    <g opacity=".8"><circle cx="940" cy="240" r="1.3"/><circle cx="1120" cy="300" r="1"/><circle cx="1290" cy="240" r="1.2"/></g>
+    <g opacity=".65"><circle cx="1430" cy="330" r=".9"/><circle cx="1520" cy="280" r="1.1"/><circle cx="120" cy="380" r="1"/></g>
+    <g opacity=".5"><circle cx="640" cy="380" r=".9"/><circle cx="880" cy="420" r=".8"/><circle cx="1080" cy="400" r="1"/></g>
+  </g>
+  <!-- bright stars with glow -->
+  <g>
+    <circle cx="1180" cy="60" r="8" fill="#dfe8ff" opacity=".18"/>
+    <circle cx="250" cy="70" r="7" fill="#dfe8ff" opacity=".16"/>
+    <circle cx="1010" cy="150" r="9" fill="#dfe8ff" opacity=".14"/>
+    <circle cx="410" cy="150" r="4" fill="#fff"/>
+    <circle cx="1180" cy="60" r="2.2" fill="#fff"/>
+    <circle cx="1010" cy="150" r="2.6" fill="#fff"/>
+  </g>
+
+  <!-- moon -->
+  <circle cx="1240" cy="330" r="330" fill="url(#moonGlow)"/>
+  <circle cx="1240" cy="330" r="104" fill="url(#moonCore)"/>
+  <g fill="#b9c3e0" opacity=".35">
+    <circle cx="1210" cy="300" r="16"/>
+    <circle cx="1275" cy="352" r="11"/>
+    <circle cx="1236" cy="380" r="7"/>
+    <circle cx="1292" cy="300" r="6"/>
+  </g>
+
+  <!-- shooting stars -->
+  <g>
+    <path d="M420 220 L540 180" stroke="#cfe0ff" stroke-width="1.6" stroke-linecap="round" opacity=".8"/>
+    <circle cx="418" cy="221" r="2.2" fill="#fff"/>
+  </g>
+
+  <!-- thin clouds -->
+  <g fill="#4b5a94" opacity=".35">
+    <path d="M120 430 q80 -26 190 -14 q90 -22 170 6 q-60 22 -170 16 q-110 14 -190 -8z"/>
+    <path d="M900 470 q70 -20 160 -10 q80 -16 150 8 q-56 18 -150 12 q-100 10 -160 -10z"/>
+    <path d="M560 520 q60 -16 130 -8 q60 -12 110 6 q-48 14 -120 10 q-70 8 -120 -8z" opacity=".7"/>
+  </g>
+
+  <!-- far city -->
+  <path d="M0 720 h60 v-40 h30 v40 h50 v-64 h34 v64 h40 v-30 h50 v30 h36 v-52 h46 v52 h40 v-24 h54 v24 h40 v-70 h28 v70 h46 v-36 h60 v36 h40 v-52 h50 v52 h34 v-30 h48 v30 h44 v-62 h36 v62 h50 v-38 h44 v38 h40 v-58 h50 v58 h40 v-28 h44 v28 h46 v-46 h40 v46 h44 v-30 h50 v30 h40 v-64 h30 v64 h46 v-40 h40 v40 h40 v-30 h50 v30 h40 v-50 h40 v50 h40 L1600 900 L0 900 Z" fill="url(#cityFar)"/>
+  <g fill="#ffd98a" opacity=".55">
+    <rect x="96" y="700" width="4" height="4"/><rect x="104" y="712" width="4" height="4"/>
+    <rect x="210" y="690" width="4" height="4"/><rect x="218" y="704" width="4" height="4"/>
+    <rect x="330" y="700" width="4" height="4"/><rect x="338" y="688" width="4" height="4"/>
+    <rect x="470" y="694" width="4" height="4"/><rect x="478" y="708" width="4" height="4"/>
+    <rect x="600" y="706" width="4" height="4"/><rect x="608" y="694" width="4" height="4"/>
+    <rect x="700" y="698" width="4" height="4"/><rect x="708" y="712" width="4" height="4"/>
+    <rect x="820" y="690" width="4" height="4"/><rect x="828" y="704" width="4" height="4"/>
+    <rect x="940" y="700" width="4" height="4"/><rect x="948" y="712" width="4" height="4"/>
+    <rect x="1060" y="692" width="4" height="4"/><rect x="1068" y="706" width="4" height="4"/>
+    <rect x="1190" y="700" width="4" height="4"/><rect x="1198" y="712" width="4" height="4"/>
+    <rect x="1320" y="694" width="4" height="4"/><rect x="1328" y="708" width="4" height="4"/>
+    <rect x="1450" y="700" width="4" height="4"/><rect x="1458" y="712" width="4" height="4"/>
+  </g>
+
+  <!-- foreground rooftop railing -->
+  <path d="M0 812 L1600 812 L1600 900 L0 900 Z" fill="url(#cityNear)"/>
+  <g stroke="#2b3564" stroke-width="5" opacity=".9">
+    <path d="M0 806 H1600"/>
+    <path d="M0 770 H1600"/>
+  </g>
+  <g stroke="#222b52" stroke-width="6" opacity=".95">
+    <path d="M60 770 V900"/><path d="M220 770 V900"/><path d="M380 770 V900"/>
+    <path d="M540 770 V900"/><path d="M700 770 V900"/><path d="M860 770 V900"/>
+    <path d="M1020 770 V900"/><path d="M1180 770 V900"/><path d="M1340 770 V900"/>
+    <path d="M1500 770 V900"/>
+  </g>
+  <!-- foreground figure silhouette (back view) -->
+  <g fill="#04060d">
+    <ellipse cx="1180" cy="900" rx="120" ry="26" opacity=".6"/>
+    <path d="M1180 828 q-26 0 -34 -18 q-6 -14 4 -26 q6 -34 30 -34 q24 0 30 34 q10 12 4 26 q-8 18 -34 18z"/>
+    <path d="M1140 826 q-18 26 -18 74 h116 q0 -48 -18 -74 q-16 10 -40 10 q-24 0 -40 -10z"/>
+  </g>
+  <!-- cat ears -->
+  <g fill="#04060d">
+    <path d="M1156 786 q-4 -15 8 -19 q8 8 3 19z"/>
+    <path d="M1204 786 q4 -15 -8 -19 q-8 8 -3 19z"/>
+  </g>
+
+  <rect width="1600" height="900" fill="url(#vignette)"/>
+</svg>

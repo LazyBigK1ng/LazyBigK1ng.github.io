@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <defs>
+    <clipPath id="avClip"><circle cx="128" cy="128" r="128"/></clipPath>
+    <linearGradient id="avBg" x1=".1" y1="0" x2=".9" y2="1">
+      <stop offset="0" stop-color="#fff0f8"/>
+      <stop offset=".45" stop-color="#f2d9ff"/>
+      <stop offset="1" stop-color="#c9e8ff"/>
+    </linearGradient>
+    <linearGradient id="avHair" x1=".2" y1="0" x2=".8" y2="1">
+      <stop offset="0" stop-color="#fdf8ff"/>
+      <stop offset=".45" stop-color="#e2ccff"/>
+      <stop offset=".8" stop-color="#c6a8f0"/>
+      <stop offset="1" stop-color="#ffb9d8"/>
+    </linearGradient>
+    <linearGradient id="avHairBack" x1=".3" y1="0" x2=".7" y2="1">
+      <stop offset="0" stop-color="#d9c2f8"/>
+      <stop offset="1" stop-color="#b18ee4"/>
+    </linearGradient>
+    <linearGradient id="avSkin" x1=".3" y1="0" x2=".7" y2="1">
+      <stop offset="0" stop-color="#fff6f0"/>
+      <stop offset="1" stop-color="#ffd8c9"/>
+    </linearGradient>
+    <linearGradient id="avIris" x1=".2" y1="0" x2=".8" y2="1">
+      <stop offset="0" stop-color="#75f3ff"/>
+      <stop offset=".5" stop-color="#6f9cff"/>
+      <stop offset="1" stop-color="#a96bff"/>
+    </linearGradient>
+    <g id="avPetal">
+      <ellipse cx="0" cy="-9" rx="6" ry="9" fill="#ffc9e2" opacity=".9"/>
+      <ellipse cx="0" cy="-9" rx="6" ry="9" fill="#ffe0ef" opacity=".7" transform="rotate(72)"/>
+      <ellipse cx="0" cy="-9" rx="6" ry="9" fill="#ffc9e2" opacity=".9" transform="rotate(144)"/>
+      <ellipse cx="0" cy="-9" rx="6" ry="9" fill="#ffe0ef" opacity=".7" transform="rotate(216)"/>
+      <ellipse cx="0" cy="-9" rx="6" ry="9" fill="#ffc9e2" opacity=".9" transform="rotate(288)"/>
+    </g>
+  </defs>
+
+  <g clip-path="url(#avClip)">
+    <rect width="256" height="256" fill="url(#avBg)"/>
+    <g opacity=".55">
+      <use href="#avPetal" transform="translate(36 52) rotate(20) scale(1.2)"/>
+      <use href="#avPetal" transform="translate(212 196) rotate(-30) scale(1.4)"/>
+      <use href="#avPetal" transform="translate(206 40) rotate(40) scale(.9)"/>
+      <use href="#avPetal" transform="translate(40 208) rotate(-10) scale(1.1)"/>
+    </g>
+    <circle cx="128" cy="196" r="96" fill="#fff" opacity=".35"/>
+
+    <!-- back hair -->
+    <path d="M128 24 C64 24 26 70 26 134 C26 182 34 216 26 246 L230 246 C222 216 230 182 230 134 C230 70 192 24 128 24 Z" fill="url(#avHairBack)"/>
+    <path d="M128 24 C64 24 26 70 26 134 C26 182 34 216 26 246 L230 246 C222 216 230 182 230 134 C230 70 192 24 128 24 Z" fill="url(#avHair)" opacity=".45"/>
+
+    <!-- ears -->
+    <ellipse cx="48" cy="146" rx="9" ry="13" fill="url(#avSkin)"/>
+    <ellipse cx="208" cy="146" rx="9" ry="13" fill="url(#avSkin)"/>
+
+    <!-- face -->
+    <path d="M128 44 C78 44 48 82 48 136 C48 186 84 226 128 226 C172 226 208 186 208 136 C208 82 178 44 128 44 Z" fill="url(#avSkin)"/>
+
+    <!-- blush -->
+    <g fill="#ff9db8" opacity=".45">
+      <ellipse cx="74" cy="176" rx="15" ry="8"/>
+      <ellipse cx="182" cy="176" rx="15" ry="8"/>
+    </g>
+
+    <!-- eyes -->
+    <g>
+      <ellipse cx="98" cy="146" rx="23" ry="25" fill="#fff"/>
+      <ellipse cx="98" cy="148" rx="19" ry="22" fill="url(#avIris)"/>
+      <ellipse cx="98" cy="152" rx="9.5" ry="11" fill="#2b1b4a"/>
+      <ellipse cx="98" cy="160" rx="13" ry="6" fill="#c6f7ff" opacity=".6"/>
+      <circle cx="90" cy="136" r="6.6" fill="#fff"/>
+      <circle cx="107" cy="154" r="3.6" fill="#fff" opacity=".9"/>
+      <path d="M73 130 Q98 114 123 130" stroke="#4b2f60" stroke-width="5.6" fill="none" stroke-linecap="round"/>
+      <path d="M75 128 L67 120" stroke="#4b2f60" stroke-width="4" stroke-linecap="round"/>
+      <path d="M76 166 Q92 175 114 166" stroke="#4b2f60" stroke-width="2.6" fill="none" stroke-linecap="round" opacity=".65"/>
+
+      <ellipse cx="158" cy="146" rx="23" ry="25" fill="#fff"/>
+      <ellipse cx="158" cy="148" rx="19" ry="22" fill="url(#avIris)"/>
+      <ellipse cx="158" cy="152" rx="9.5" ry="11" fill="#2b1b4a"/>
+      <ellipse cx="158" cy="160" rx="13" ry="6" fill="#c6f7ff" opacity=".6"/>
+      <circle cx="150" cy="136" r="6.6" fill="#fff"/>
+      <circle cx="167" cy="154" r="3.6" fill="#fff" opacity=".9"/>
+      <path d="M133 130 Q158 114 183 130" stroke="#4b2f60" stroke-width="5.6" fill="none" stroke-linecap="round"/>
+      <path d="M181 128 L189 120" stroke="#4b2f60" stroke-width="4" stroke-linecap="round"/>
+      <path d="M142 166 Q164 175 180 166" stroke="#4b2f60" stroke-width="2.6" fill="none" stroke-linecap="round" opacity=".65"/>
+    </g>
+
+    <!-- eyebrows -->
+    <g stroke="#c19ad6" stroke-width="3.2" stroke-linecap="round" fill="none" opacity=".8">
+      <path d="M80 112 Q97 104 114 111"/>
+      <path d="M142 111 Q159 104 176 112"/>
+    </g>
+
+    <!-- nose mouth -->
+    <ellipse cx="128" cy="182" rx="2.6" ry="2" fill="#f0b09f" opacity=".8"/>
+    <path d="M119 194 Q128 203 137 194 Q128 199 119 194 Z" fill="#e2688c"/>
+
+    <!-- bangs -->
+    <path d="M128 40 C90 40 62 66 56 110 C62 96 72 90 81 95 C84 78 96 76 102 96 L108 122 L119 94 L128 120 L138 93 L149 122 L155 96 C162 78 174 78 178 98 C188 92 197 98 201 112 C193 66 166 40 128 40 Z" fill="url(#avHair)"/>
+    <path d="M56 110 C47 148 48 188 60 218 C70 198 66 158 71 124 Z" fill="url(#avHair)"/>
+    <path d="M200 110 C209 148 208 188 196 218 C186 198 190 158 185 124 Z" fill="url(#avHair)"/>
+    <g stroke="#fff" stroke-width="5.5" stroke-linecap="round" fill="none" opacity=".4">
+      <path d="M84 66 Q114 50 146 58"/>
+    </g>
+
+    <!-- ahoge -->
+    <path d="M128 36 C118 16 142 2 152 16 C142 12 132 22 134 36" fill="none" stroke="url(#avHair)" stroke-width="6" stroke-linecap="round"/>
+
+    <!-- sakura hairpin -->
+    <g transform="translate(184,86) scale(.95)">
+      <ellipse cx="0" cy="-9" rx="6" ry="9" fill="#ffb2d3" transform="rotate(0)"/>
+      <ellipse cx="0" cy="-9" rx="6" ry="9" fill="#ffcbe4" transform="rotate(72)"/>
+      <ellipse cx="0" cy="-9" rx="6" ry="9" fill="#ffb2d3" transform="rotate(144)"/>
+      <ellipse cx="0" cy="-9" rx="6" ry="9" fill="#ffcbe4" transform="rotate(216)"/>
+      <ellipse cx="0" cy="-9" rx="6" ry="9" fill="#ffb2d3" transform="rotate(288)"/>
+      <circle r="3" fill="#ffd76e"/>
+    </g>
+  </g>
+</svg>
